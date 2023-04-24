@@ -1,4 +1,4 @@
-# css selectors
+# css classes
 
 ## instructions:
 
@@ -22,6 +22,7 @@
 2. sometimes, to create proper width and height, it's enough to rely on padding the element
 3. edit the links in the page and add links to wikipedia, try adding `target="_blank"` as an attribute to the `<a>` tags, what's the difference?
 4. make sure to not duplicate you css code - if all elements have the same font-size - try to define it in the parent only. same with `color` and other text styles that can inherit.
+5. possible background color for the tags: `#2c5eaa`
 
 
 ## Good Luck! 
