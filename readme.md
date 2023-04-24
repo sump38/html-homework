@@ -2,11 +2,12 @@
 
 ## instructions:
 
-1. this task starts with similar HTML to the previous task
+1. this task starts with similar HTML to the previous task, but this time some elements have class names.
 2. you will work on `index.html` and `style.css` files only.
 3. no changes should be made inside `<body>` tag.
-4. in `style.css` - add the proper classnames from the html file to reflect the previous task's visibility
+4. in `style.css` - add the proper class names from the html file to reflect the previous task's visibility
 5. combine both class, id and element selectors to reach the result in the below image
+
 ![alt text](./result/result-part-2.png "Part 2- Result after changes").
 6. do not add new classes - only edit the css.
 
