@@ -4,32 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <h1>Coffee Beans</h1>
-      <div>
-        <div><img src="beans.jpg" /></div>
-        <div>
-          <p>
-            Coffee beans come from the coffee plant, a bush-like plant which can
-            get very tall (coffee farmers will usually keep them trimmed to
-            around 5ft to keep them manageable). On these coffee plants, bunches
-            of cherries grow and it’s inside these that you’ll find two coffee
-            beans.
-          </p>
-        </div>
-      </div>
-    </div>
+    <table class="receipt">
+      <caption>Purchase Receipt</caption>
+      <thead>
+        <th>
+          Item
+        </th>
+        <th>
+          Quantity
+        </th>
+        <th>
+          Price
+        </th>
+        <th>
+          Total
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            Coffee Mug
+          </th>
+          <td>
+            2
+          </td>
+          <td>
+            23$
+          </td>
+          <td>
+            46$
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Coffee Beans
+          </th>
+          <td>
+            1
+          </td>
+          <td>
+            83$
+          </td>
+          <td>
+            83$
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Black Tea Bags
+          </th>
+          <td>
+            9
+          </td>
+          <td>
+            2$
+          </td>
+          <td>
+            18$
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>
+            Total
+          </th>
+          <td colspan="3">
+            147$
+          </td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
-  <style>
-    p {
-      width: 200px;
-      display: inline;
-    }
-    img {
-      width: 200px;
-    }
-  </style>
 </html>
