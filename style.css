@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
 }
+
 html, body {
   margin:0px;
   padding:0px;
@@ -44,4 +45,72 @@ section {
   align-items: center;
   font-size:32px;
   font-weight: bold;
+}
+
+/* edit after this */
+
+.menu {
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  z-index: 1;
+  height: 38px;
+}
+
+.menu * {
+  color: var(--primary-text);
+}
+
+.menu > .menu-item{
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-small);
+}
+
+.menu-item{
+  display: flex;
+  gap: var(--spacing-small);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.submenu-container{
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  /* object-position: bottom 10px; */
+}
+
+.submenu-container > .menu-item{
+  padding: var(--spacing-small);
+  background-color: var(--secondary-light);
+  width: 120%;
+}
+
+.submenu-container > .menu-item:hover {
+  background-color: var(--secondary-base);
+}
+
+.submenu-container *{
+  color: var(--secondary-text);
+}
+
+.menu-item:hover > .submenu-container{
+  display: flex;
+}
+
+.menu-item.active > .submenu-container{
+  display: flex;
+}
+
+/* .chevron {
+  position: static;
+} */
+
+.chevron:hover{
+  cursor: pointer;
 }
