@@ -55,6 +55,7 @@ html, body {
   background-repeat: no-repeat;
   background-position-x:right;
   padding-right: 20px;
+  cursor: pointer;
 }
 .horizontal .menu .menu-item .submenu-container {
   display: none;
@@ -67,11 +68,9 @@ html, body {
 }
 .horizontal .menu .menu-item .submenu-container .menu-item a{
   background: url('/img/chevron-light-side.svg');
-  /* fill: #0000EE; */
   background-repeat: no-repeat;
   background-position-x:right;
   padding-right: 20px;
-  /* filter: invert(100%); */
 }
 
 .horizontal .menu .menu-item:hover .submenu-container{
@@ -101,10 +100,9 @@ html, body {
 .horizontal .menu .menu-item .submenu-container span a{
   margin: var(--spacing-small);
 }
-/* .horizontal .menu .submenu-container .menu-item a.menu-item:not(.submenu-container .menu-item > a) {
-  margin: 0;
-} */
-/* .vertical {
+/* VERTICAL */
+
+.vertical {
   display:flex;
   flex-direction: row;
   width:100%;
@@ -112,9 +110,45 @@ html, body {
 }
 .vertical .menu{
   height: 100vh;
+  width: 15%;
   background-color: var(--primary-dark);
-} */
-
+}
+.vertical .menu .menu-item span, a{
+  display: flex;
+  margin: 15px;
+  color: var(--primary-text);
+}
+.vertical .menu .menu-item .submenu-container{
+  margin-left: 20px;
+}
+.vertical .menu .menu-item .submenu-container .menu-item .submenu-container{
+  display: none;
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-base);
+  z-index: 1;
+  position: fixed;
+  margin-left: 11%;
+  width: 20%;
+  
+}
+.vertical .menu .menu-item .submenu-container .menu-item:hover .submenu-container{
+  display: block;
+}
+.vertical .menu .menu-item .submenu-container .menu-item a{
+  background: url('/chevron-light-side.svg');
+  background-repeat: no-repeat;
+  background-position-x:right;
+  padding-right: 90px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.vertical .menu .menu-item .submenu-container .menu-item .submenu-container a{
+  background-image: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
 section {
   background-color: var(--primary-light);
   flex:1;
