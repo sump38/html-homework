@@ -69,26 +69,24 @@ section {
 }
 
 .menu-item{
-  display: flex;
   gap: var(--spacing-small);
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
 }
 
 
 .submenu-container{
   display: none;
   flex-direction: column;
+  flex-basis: 100%;
   border-radius: 5px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  /* object-position: bottom 10px; */
+  position: absolute;
 }
 
 .submenu-container > .menu-item{
   padding: var(--spacing-small);
   background-color: var(--secondary-light);
-  width: 120%;
+  width: 170px;
 }
 
 .submenu-container > .menu-item:hover {
@@ -107,10 +105,12 @@ section {
   display: flex;
 }
 
-/* .chevron {
-  position: static;
-} */
-
 .chevron:hover{
   cursor: pointer;
+}
+
+.submenu-container > .menu-item > .submenu-container {
+  flex-basis: unset;
+  left:100%;
+  top: 0%;
 }

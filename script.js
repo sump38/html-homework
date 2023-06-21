@@ -29,9 +29,7 @@ function subToggle(){
 
     $('section').onclick = function() {
         first_menu.forEach(element => { 
-            if(element.classList.contains('active')){
                 element.classList.remove('active');
-            }
         })
     }
 }
@@ -39,5 +37,5 @@ function subToggle(){
 
 addChevron(first_menu,'img/chevron-light.svg');
 subChevron(first_menu,'img/chevron.svg');
-subToggle()
+subToggle();
 
